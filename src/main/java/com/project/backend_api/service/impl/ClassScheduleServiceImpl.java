@@ -41,6 +41,7 @@ public class ClassScheduleServiceImpl implements IClassScheduleService{
             existingClassSchedule.setClassRoom(classSchedule.getClassRoom());
             existingClassSchedule.setClassRoom(classSchedule.getClassRoom());
             existingClassSchedule.setCourse(classSchedule.getCourse());
+            existingClassSchedule.setClassRoom(classSchedule.getClassRoom());
             return classScheduleRepository.save(existingClassSchedule);
         }
         return null;

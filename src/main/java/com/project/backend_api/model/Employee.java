@@ -79,5 +79,10 @@ public class Employee {
     @JoinColumn(name = "employee_type_id", nullable = false)
     @JsonBackReference(value = "emp_type")
     private EmployeeType employeeType; // Kiểu nhân viên
+    
+    @ManyToOne
+    @JoinColumn(name = "specialization_id")
+    @JsonBackReference(value = "spec_emp")
+    private Specialization specialization;
 
 }

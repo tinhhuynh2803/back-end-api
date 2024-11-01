@@ -60,6 +60,8 @@ public class ImageServiceImpl implements IImageService{
 	    // Cập nhật các trường khác
 	    existingImage.setImageName(image.getImageName());
 	    existingImage.setImageUrl(image.getImageUrl());
+	    existingImage.setEmployee(image.getEmployee());
+	    existingImage.setStudent(image.getStudent());
 
 	    // Cập nhật sinh viên nếu có
 	    if (image.getStudent() != null && image.getStudent().getId() != null) {
